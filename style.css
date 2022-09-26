@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(4, 51, 87, 1) 82%,
+      rgba(10, 79, 126, 1) 88%,
+      rgba(0, 212, 255, 1) 100%);
+}
+
+/* header style */
+
+.header {
+  height: 8rem;
+
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 85rem;
+
+  background-color: rgba(9, 18, 56, 0.5);
+}
+
+.header h1 a {
+  text-decoration: none;
+  color: #fff;
+
+  font-size: 4rem;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header li {
+  list-style: none;
+  /* display: inline-block;  */
+  margin-right: 2rem;
+}
+
+.header li a {
+  display: inline;
+  text-decoration: none;
+  color: #fff;
+
+  font-size: 3rem;
+}
+
+/* main style */
+
+.container {
+  width: min(110rem, 90%);
+  margin: 5rem auto 0;
+}
+
+.container main {
+  text-align: center;
+}
+
+.container main h2 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+/* span style */
+
+.gradient {
+  /* Primeiro passo: definir um degradê como fundo */
+  background-image: linear-gradient(to bottom,
+      rebeccapurple,
+      steelblue,
+      turquoise);
+
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+}
+
+
+
+.container p {
+  color: rgba(255, 255, 255, 0.678);
+  font-size: 2rem;
+}
+
+.choose-content {
+  margin-top: 3rem;
+  text-align: center;
+
+  border: 1px groove rgba(3, 15, 72, 0.67);
+  border-radius: 0.6rem;
+
+  padding: 2rem;
+}
+
+
+.choose-content h2 {
+  font-size: 4rem;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2rem;
+
+  margin-top: 2rem;
+}
+
+.accessibility {
+  width: 60rem;
+
+  font-size: 2rem;
+  text-align: center;
+
+  border: 1px groove rgba(165, 165, 165, 0.67);
+  border-radius: 0.6rem;
+
+  padding: 2rem;
+}
+
+.accessibility:hover {
+  background-color: rgba(66, 198, 250, 0.76);
+}
+
+.accessibility-options {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2rem;
+
+
+  margin-top: 2rem;
+  
+
+}
+
+.visual-accessibility {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20vh 20vh;
+  grid-template-areas:
+    "op1 op1 op2"
+    "op3 op3 op2"
+    "op4 op5 op6";
+  gap: 1rem;
+
+  width: 60rem;
+
+
+
+}
+
+/* grid dos links de acessibilidade container 1 */
+
+#op1 {
+  grid-area: op1;
+}
+
+
+#op1 {
+  grid-area: op1;
+}
+
+#op2 {
+  grid-area: op2;
+}
+
+#op3 {
+  grid-area: op3;
+}
+
+#op4 {
+  grid-area: op4;
+}
+
+#op5 {
+  grid-area: op5;
+}
+
+#op6 {
+  grid-area: op6;
+}
+
+/* grid dos links de acessibilidade container 2 */
+
+.hearing-accessibility {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20vh 20vh;
+  grid-template-areas:
+    "op7 op8 op8"
+    "op7 op9 op10"
+    "op7 op11 op12";
+  gap: 1rem;
+
+  width: 60rem;
+}
+
+#op7 {
+  grid-area: op7;
+}
+
+#op8 {
+  grid-area: op8;
+}
+
+#op9 {
+  grid-area: op9;
+}
+
+#op10 {
+  grid-area: op10;
+}
+
+#op11 {
+  grid-area: op11;
+}
+
+#op12 {
+  grid-area: op12;
+}
+
+
+.visual-accessibility div,
+.hearing-accessibility div {
+  padding: 3rem;
+
+  border: 1px groove rgba(165, 165, 165, 0.67);
+  border-radius: 0.6rem;
+
+  display: grid;
+  place-items: center;
+
+  text-align: center;
+}
+
+.visual-accessibility div a,
+.hearing-accessibility div a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.visual-accessibility div:hover,
+.hearing-accessibility div:hover {
+  cursor: pointer;
+
+  border: 1px solid rgba(66, 198, 250, 0.76);
+  background-color: rgba(47, 73, 107, 0.575);
+
+}
