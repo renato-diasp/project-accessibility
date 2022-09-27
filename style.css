@@ -11,7 +11,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
 
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
@@ -23,18 +23,21 @@ body {
       rgba(4, 51, 87, 1) 82%,
       rgba(10, 79, 126, 1) 88%,
       rgba(0, 212, 255, 1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* header style */
 
 .header {
+  
   height: 8rem;
 
-
+  
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 85rem;
+  
 
   background-color: rgba(9, 18, 56, 0.5);
 }
@@ -43,16 +46,17 @@ body {
   text-decoration: none;
   color: #fff;
 
-  font-size: 4rem;
+  font-size: 6rem;
+
+  
 }
 
-.header ul {
+/* .header ul {
   display: flex;
 }
 
 .header li {
   list-style: none;
-  /* display: inline-block;  */
   margin-right: 2rem;
 }
 
@@ -62,7 +66,7 @@ body {
   color: #fff;
 
   font-size: 3rem;
-}
+} */
 
 /* main style */
 
@@ -123,16 +127,22 @@ body {
   font-size: 4rem;
 }
 
+.accessibilities{
+  display: flex;
+  gap: 2rem
+
+}
+
 .categories {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   column-gap: 2rem;
 
   margin-top: 2rem;
 }
 
 .accessibility {
-  width: 60rem;
+  
 
   font-size: 2rem;
   text-align: center;
@@ -168,7 +178,7 @@ body {
     "op4 op5 op6";
   gap: 1rem;
 
-  width: 60rem;
+  
 
 
 
@@ -217,7 +227,9 @@ body {
     "op7 op11 op12";
   gap: 1rem;
 
-  width: 60rem;
+  margin-top: 2rem;
+
+  
 }
 
 #op7 {
@@ -263,6 +275,8 @@ body {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
+
+  
 }
 
 .visual-accessibility div:hover,
@@ -272,4 +286,30 @@ body {
   border: 1px solid rgba(66, 198, 250, 0.76);
   background-color: rgba(47, 73, 107, 0.575);
 
+}
+
+
+@media (max-width: 1200px){
+  .header{
+    gap: 40%
+  }
+  .accessibilities{
+    flex-direction: column;
+  }
+
+  .visual-accessibility, .hearing-accessibility{
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+
+  .container p{
+    display: none;
+  }
+  .visual-accessibility, 
+  .hearing-accessibility{
+    display: flex;
+    flex-direction: column;
+  }
 }
