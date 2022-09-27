@@ -142,8 +142,6 @@ body {
 }
 
 .accessibility {
-  
-
   font-size: 2rem;
   text-align: center;
 
@@ -162,10 +160,7 @@ body {
   justify-content: space-between;
   column-gap: 2rem;
 
-
   margin-top: 2rem;
-  
-
 }
 
 .visual-accessibility {
@@ -177,40 +172,28 @@ body {
     "op3 op3 op2"
     "op4 op5 op6";
   gap: 1rem;
-
   
-
-
-
 }
 
 /* grid dos links de acessibilidade container 1 */
-
+/* #op1 {
+  grid-area: op1;
+} */
 #op1 {
   grid-area: op1;
 }
-
-
-#op1 {
-  grid-area: op1;
-}
-
 #op2 {
   grid-area: op2;
 }
-
 #op3 {
   grid-area: op3;
 }
-
 #op4 {
   grid-area: op4;
 }
-
 #op5 {
   grid-area: op5;
 }
-
 #op6 {
   grid-area: op6;
 }
@@ -227,35 +210,26 @@ body {
     "op7 op11 op12";
   gap: 1rem;
 
-  margin-top: 2rem;
-
-  
+  margin-top: 2rem;  
 }
-
 #op7 {
   grid-area: op7;
 }
-
 #op8 {
   grid-area: op8;
 }
-
 #op9 {
   grid-area: op9;
 }
-
 #op10 {
   grid-area: op10;
 }
-
 #op11 {
   grid-area: op11;
 }
-
 #op12 {
   grid-area: op12;
 }
-
 
 .visual-accessibility div,
 .hearing-accessibility div {
@@ -274,9 +248,7 @@ body {
 .hearing-accessibility div a {
   text-decoration: none;
   color: #fff;
-  font-weight: 600;
-
-  
+  font-weight: 600;  
 }
 
 .visual-accessibility div:hover,
@@ -285,8 +257,9 @@ body {
 
   border: 1px solid rgba(66, 198, 250, 0.76);
   background-color: rgba(47, 73, 107, 0.575);
-
 }
+
+/* Responsivo */
 
 
 @media (max-width: 1200px){
@@ -312,4 +285,14 @@ body {
     display: flex;
     flex-direction: column;
   }
+}
+
+@media (max-width: 425px){
+  .container main h2 {
+  font-size: 4rem;  
+}
+
+.choose-content h2 {
+  font-size: 3rem;
+}
 }
